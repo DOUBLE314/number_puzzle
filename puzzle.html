@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Number Puzzle Game JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="Reset();">
+<center>
+    <h2>Number Puzzle Game</h2>
+    <br>
+    <table cellpadding="0" cellspacing="0" align="center" id="tbl">
+        <tbody>
+        <tr>
+            <td class="cell"><div id="n14" class="num" onclick="Move(this)">14</div></td>
+            <td class="cell"><div id="n1" class="num" onclick="Move(this)">1</div></td>
+            <td class="cell"><div id="n7" class="num" onclick="Move(this)">7</div></td>
+            <td class="cell"><div id="n2" class="num" onclick="Move(this)">2</div></td></tr>
+        <tr>
+            <td class="cell"><div id="n8" class="num"  onclick="Move(this)">8</div></td>
+            <td class="cell"><div id="n3" class="num"  onclick="Move(this)">3</div></td>
+            <td class="cell"><div id="n11" class="num" onclick="Move(this)">11</div></td>
+            <td class="cell"><div id="n4" class="num" onclick="Move(this)">4</div></td></tr>
+        <tr>
+            <td class="cell"><div id="n5" class="num" onclick="Move(this)">5</div></td>
+            <td class="cell"><div id="n13" class="num" onclick="Move(this)">13</div></td>
+            <td class="cell"><div id="n10" class="num" onclick="Move(this)">10</div></td>
+            <td class="cell"><div id="n12" class="num" onclick="Move(this)">12</div></td></tr>
+        <tr>
+            <td class="cell"><div id="n15" class="num" onclick="Move(this)">15</div></td>
+            <td class="cell"><div id="n9" class="num" onclick="Move(this)">9</div></td>
+            <td class="cell"><div id="n6" class="num" onclick="Move(this)">6</div></td>
+            <td class="cell"></td></tr>
+        </tbody>
+    </table>
+    <input type="text" name="rows" id="rows" value="3" size="3">
+    x
+    <input type="text" name="cols" id="cols" value="3" size="3" style="text-align: center;">
+    <input type="button" value="Начать новую игру" id="myBtn" onclick="Reset();">
+    <br>
+    <br>
+    Количество ходов: <span id="moves">0</span>
+    <br>
+</center>
+</body>
+</html>
